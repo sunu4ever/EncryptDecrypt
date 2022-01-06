@@ -33,8 +33,6 @@ namespace EncryptDecrypt
             catch (CryptographicException e)
             {
                 Console.WriteLine(e.ToString());
-
-                
             }
         }
     }
