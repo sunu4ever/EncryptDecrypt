@@ -10,7 +10,7 @@ namespace EncryptDecrypt
             try
             {
                 byte[] decryptedData;
-                //Create a new instance of RSACryptoServiceProvider.
+                
                 using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
                 {
                     //Import the RSA Key information. This needs
