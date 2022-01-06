@@ -21,9 +21,7 @@ namespace EncryptDecrypt
                     
                     RSA.ImportParameters(RSAKeyInfo);
 
-                    //Decrypt the passed byte array and specify OAEP padding.  
-                    //OAEP padding is only available on Microsoft Windows XP or
-                    //later.  
+                
                     decryptedData = RSA.Decrypt(DataToDecrypt, DoOAEPPadding);
                 }
                
