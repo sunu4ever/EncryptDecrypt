@@ -13,15 +13,8 @@ namespace EncryptDecrypt
                 //Create a new instance of RSACryptoServiceProvider.
                 using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
                 {
-                    //Import the RSA Key information. This needs
-                    //to include the private key information.
-
                     RSAParameters RSAKeyInfo = new RSAParameters();
-                    
-                    
                     RSA.ImportParameters(RSAKeyInfo);
-
-                
                     decryptedData = RSA.Decrypt(DataToDecrypt, DoOAEPPadding);
                 }
                
