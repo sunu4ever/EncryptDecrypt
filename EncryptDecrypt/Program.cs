@@ -18,10 +18,8 @@ namespace EncryptDecrypt
 
                     RSAParameters RSAKeyInfo = new RSAParameters();
                     
-                    
                     RSA.ImportParameters(RSAKeyInfo);
 
-                
                     decryptedData = RSA.Decrypt(DataToDecrypt, DoOAEPPadding);
                 }
                
